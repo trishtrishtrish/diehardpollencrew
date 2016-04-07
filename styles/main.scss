@@ -231,11 +231,6 @@ img {
   padding: .5em;
   text-transform: uppercase;
   color: black;
-  }
-
-
-.scene {
-  z-index: $z-bottom;
 }
 
 .article {
@@ -252,6 +247,17 @@ img {
 .accordion-content {display: none;}
 .accordion-content.default {display: block;}
 
+.scene {
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: $z-bottom;
+}
 
 .img {
   position: absolute;
