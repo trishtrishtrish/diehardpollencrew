@@ -14,13 +14,11 @@ title: Schedule
 {% endfor %}
 
 
-<script src="/scripts/moment.js"></script>
-
+<script src="/{% if page.title !=  "Schedule" %}.{% endif %}./moment.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script type="text/javascript">
   var weekends = $(".weekend");
-
-  console.log( weekends );
 
   for (var i = 0; i < weekends.length; i++) {
     var weekend = weekends[ i ],

@@ -5,7 +5,7 @@
         <title>{{ site.name }} | {{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="{% if page.title !=  "Schedule" %}.{% endif %}./styles/main.css">
 
 
         <!-- Facebook Open Graph Garbage -->
@@ -19,15 +19,15 @@
     </head>
     <body>
         <header class="container">
-          <img class="header-logo" src="/img/DPClogo.svg" alt="" />
+          <img class="header-logo" src="{% if page.title !=  "Schedule" %}.{% endif %}./img/DPClogo.svg" alt="" />
           <h1 class="visuallyhidden">Diehard Pollen Crew:</h1>
           <h1 class="header-subtitle"></h1>
           <br>
 
           <nav role="navigation" class="mainnav">
-            <a class="mainnav-item" href="/">Home</a>
-            <a class="mainnav-item" href="/about">About</a>
-            <a class="mainnav-item" href="/blog">Blog</a>
+            <a class="mainnav-item" href="{% if page.title !=  "Schedule" %}.{% endif %}./">Home</a>
+            <a class="mainnav-item" href="{% if page.title !=  "Schedule" %}.{% endif %}./about">About</a>
+            <a class="mainnav-item" href="{% if page.title !=  "Schedule" %}.{% endif %}./blog">Blog</a>
           </nav>
         </header>
 
