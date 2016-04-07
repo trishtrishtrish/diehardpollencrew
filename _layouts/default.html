@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="/styles/main.css">
 
+
         <!-- Facebook Open Graph Garbage -->
         <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:type" content="website" />
@@ -18,12 +19,14 @@
     </head>
     <body>
         <header class="container">
-          <img class="header-logo" src="/img/logo.svg" alt="" />
-          <h1 class="visuallyhidden">Diehard Tinsel Crew:</h1>
-          <h2 class="header-subtitle">Jingle With a Vengeance</h2>
+          <img class="header-logo" src="/img/DPClogo.svg" alt="" />
+          <h1 class="visuallyhidden">Diehard Pollen Crew:</h1>
+          <h1 class="header-subtitle"></h1>
+          <br>
 
           <nav role="navigation" class="mainnav">
             <a class="mainnav-item" href="/">Home</a>
+            <a class="mainnav-item" href="/about">About</a>
             <a class="mainnav-item" href="/blog">Blog</a>
           </nav>
         </header>
@@ -31,6 +34,19 @@
         <article class="container">
           {{ content }}
         </article>
+
+        <ul class="scene" data-friction-x="0.03"
+          data-friction-y="0.05">
+          <div class="layer" id="layer-1" data-depth="0.15">
+            <div class="img" id="img-1"></div>
+          </div>
+          <div class="layer" id="layer-2" data-depth="0.25">
+            <div class="img" id="img-2"></div>
+          </div>
+          <div class="layer" id="layer-3" data-depth="0.15">
+            <div class="img" id="img-3"></div>
+          </div>
+        </ul>
 
         {% include footer.html %}
     </body>

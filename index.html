@@ -8,14 +8,15 @@ title: Schedule
 
 {% for weekend in site.weekends %}
   <section data-date="{{ weekend.date }}" class="weekend" id="weekend-{{forloop.index}}">
-    <h2>{{ weekend.title }}</h2>
-    {{ weekend.content }}
+    <h2 class=accordion-toggle>{{ weekend.title }}</h2>
+    <div class=accordian-content>{{ weekend.content }}</div>
   </section>
 {% endfor %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script src="/scripts/moment.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
   var weekends = $(".weekend");
 
